@@ -27,8 +27,9 @@ html, body{
     transition: width .55s ease;
 }
 #navegation{
-    position: absolute;
+    position: relative;
     width: 100%;
+    background: purple;
 }
 #navegation ul.navegation-list{
     list-style: none;
@@ -82,10 +83,21 @@ html, body{
 }
 #header-top{
     background-color: black;
-    width:100%;
+    position: fixed;
+    top:0px;
+    z-index: 999;
     /*height: 80px;*/
-    padding:5px 0 8px 0;
+    padding:5px 0 8px 0; 
+}
+.flex-medio{
+    width:calc(100% - 53px); 
+}
+.flex-pequeno{
+    width: calc(100% - 200px);
+}
+.container{
     position: relative;
+    top:53px;
 }
 #content p{
     padding:1rem;
@@ -192,7 +204,9 @@ html, body{
 }
 .top-menu{
     list-style: none;
+    text-align: right;
     position: absolute;
+    top:0;
     right: 0;
     display: inline-block;
     background: red;

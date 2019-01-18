@@ -11,6 +11,16 @@ window.onload = function(){
 function abrirMenu(){
    $("#sidebar-menu").toggleClass("fechado-menu");
    $("#content").toggleClass("redimensionando");
+   
+   
+   if($("#header-top").hasClass("flex-pequeno")){
+        $("#header-top").removeClass("flex-pequeno");
+        $("#header-top").addClass("flex-medio");
+   }else{
+        $("#header-top").removeClass("flex-medio");
+        $("#header-top").addClass("flex-pequeno");
+   }
+
    $("#sidebar-menu").toggleClass("closed-menu");
 
    if($("#sidebar-menu").hasClass("closed-menu")){

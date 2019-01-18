@@ -60,8 +60,8 @@
 
 
 
-        <div id="content">
-            <div id="header-top"> 
+        <div id="content" >
+            <div id="header-top" class="flex-pequeno"> 
                 <a href="#" class="btn-menu"><i class="fas fa-align-left"></i></a>
                 <form id="formBusca"> 
                     <input type="text" class="input-busca" placeholder="Pesquisar...">
